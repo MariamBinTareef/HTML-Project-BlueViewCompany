@@ -1,0 +1,174 @@
+/* General reset for margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Roboto', sans-serif; /* Apply the new font globally */
+    color: #333; /* Dark text color for readability */
+    background-image: url(Images/background-2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+ 
+/* Header styling */
+header {
+    text-align: center;
+    background-color: #3c4e64; /* Dark blue header */
+    color: white; /* Light beige text */
+    padding: 30px; /* Extra padding for spacing */
+    border-bottom: 4px solid #916e53; /* Optional border for separation */
+}
+
+/* Styling for the title in the header */
+header h1 {
+    font-size: 2.5rem; /* Smaller font size */
+    font-family: 'Roboto', sans-serif; /* Apply the same font to the title */
+    text-transform: uppercase; /* Capitalize the title */
+    letter-spacing: 1px; /* Add spacing between letters */
+    color: #f8e1c7; /* Light color for the title */
+    margin-bottom: 10px; /* Add margin below the title for spacing */
+}
+
+/* Bold part of the title (Photo) */
+.bold-title {
+    font-weight: bold; /* Make "Photo" bold */
+    color: #ffffff; /* White color for contrast */
+}
+
+/* Regular part of the title (Gallery) */
+header h1 span:not(.bold-title) {
+    font-weight: normal; /* Make "Gallery" regular */
+    color: #f8e1c7; /* Soft light color for "Gallery" */
+}
+
+/* Gallery container */
+.gallery {
+    padding-top: 200px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive grid layout */
+    gap: 15px;
+    padding: 20px;
+}
+
+/* Styling for each image container */
+.gallery-item {
+    border: 2px solid #728396; /* Brown border around images */
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #fff;
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    justify-content: center; /* Center images inside the gallery item */
+}
+
+/* Image styling */
+.gallery-item img {
+    width: 100%; /* Make images fill their container */
+    height: 300px; /* Set a larger consistent height */
+    object-fit: cover; /* Maintain aspect ratio and fill the container */
+    border-radius: 10px;
+}
+
+/* Hover effect for images */
+.gallery-item:hover {
+    transform: scale(1.05); /* Slightly enlarge the image when hovered */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+/* Make the gallery responsive to screen sizes */
+@media (max-width: 600px) {
+    .gallery {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Adjust grid for smaller screens */
+    }
+}
+
+/*-----------------------------------------------------*/
+footer{
+    width: 100%;
+    height: 300px;
+    background-color: #3c4e64;
+    margin: 0;
+}
+
+.f-logo{
+    margin-left: 10px;
+    width: 20%;
+    float: left;  
+ }
+    .f-logo a{
+        color: white;
+        text-transform: capitalize;
+        text-decoration: none;
+        
+        
+    }
+
+        .f-logo a:hover{
+            color: #916e53;
+        }
+    
+    .f-logo img{
+        width: 200px;
+        height: 100px;
+    }
+    .f-logo h4{
+        text-transform: capitalize; 
+        padding-left: 20px ;
+        color: white;
+        
+    }
+    .f-logo p{
+        text-transform: capitalize; 
+        padding-left: 20px ;
+        color: white;
+        
+    }
+     
+
+.f-menu{
+    width: 20%; 
+    float: right;
+    margin: 20px 100px;
+    padding: 10px 10px ;
+    text-align: right;
+
+ }
+
+ .f-menu h3{ 
+    text-align: left;
+    color: white; 
+    text-transform: capitalize;  
+    padding-left: 20px ;
+    
+    }
+    .f-menu a{
+        display: block; text-align: left;
+        color: white;
+        text-decoration: none;
+        text-transform: capitalize; 
+        font-size: large;
+        padding-left: 20px ;
+        
+    }
+    .f-menu a:hover{
+        color: #916e53;
+    }
+/*------------------------------------------*/
+    .copyRights{
+        width: 100%;
+        height: 20px;
+        margin: 0;
+        background-color: #916e53;
+        padding: 10px;
+
+    }
+        .copyRights p{
+            color: white;
+            text-transform: capitalize;
+            font-size: x-small;
+
+        }

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><!---الميتا لتنظيم الصفحة
+----------------------------------------------------------------->
+ <title>Cargo Shipping Co. </title> <!--العنوان -->
+ <style>        /*كود ال css*/
+body{
+ background-image: url(Images/Contact\ Us\ Page\ img.png);  
+ background-repeat: no-repeat;      
+ background-position: center;         
+background-size: cover;               
+margin-top: 200px;                       
+}
+#up{
+padding-top: 40px;
+background-color: #3c4e64; 
+color: white;              
+width: 100%;height: 70px;              
+font-weight: bolder;                    
+font-family: sans-serif;
+font-size: larger;
+text-align: center;
+margin-bottom: 40px;
+position: fixed;
+top:0;  
+left: 0;
+}
+#up a:hover{
+    color: #916e53;}
+#page{
+margin-left: 40px;
+margin-top: 40px;
+font-weight: bolder;
+font-size: larger;
+padding-bottom: 130px;     
+text-indent: 50px;
+}
+#footer{
+position: fixed;
+background-color: #3c4e64;
+color: white;
+width: 100%;
+bottom: 0;
+text-align: center;
+padding-top:20px;
+padding-bottom: 25px;
+left: 0;
+}
+/*css the input */
+#box
+{
+background-color: #3c4e64;
+color: rgb(12, 13, 12);
+width: 400px;
+height: 250px;
+border-radius: 10px;
+padding-top: 30px;
+bottom: 200px;
+text-indent: 40px;
+left: 80px;
+padding-left: 20px;
+margin-top: 60px;
+}
+button{
+margin-left: 155px;
+margin-top: 20px;
+border-radius: 20px;
+height: 30px;width: 60px;
+}
+/*end css the input */
+ </style>
+</head>
+<!----------------------the body ----------------------------->
+<body>
+ <div id="up">
+ <a href="index.html" title="Home Page" style=" color: white;
+ text-decoration: none; text-transform: capitalize; font-size: 35px; ">Blue View</a>                       
+ </div>
+<!---------------------------------------------------->
+<br>
+<!--div2-->
+<div id="page">
+<!---------------------user input --------------------->
+<div id="box">
+<p>
+Contact us in giving feedback                        
+</p>
+<hr>
+<form onclick="validateForm()">
+<label for="get">Name</label>
+<input type="text" id="name" placeholder="name">
+<br>
+<label for="get" style="padding-left: 40px;">Email</label>
+<input type="email" id="email" placeholder="Email">
+<br>
+<textarea name="text" id="text" placeholder="feedback"
+ style="width: 200px; height: 60px;margin-left: 40px;"></textarea>
+<br>
+<button>click</button>
+</form>                        
+</div>
+<!---------------------------------------------------->
+<!--div3-->
+</div>
+ <div id="footer">
+    
+</div> 
+<script>    // java script
+                        function validateForm() {
+                          
+                            const name = document.getElementById('name').value.trim();
+                            const email = document.getElementById('email').value.trim();
+                            const feedback = document.getElementById('text').value.trim();
+                
+                            
+                            if (name === "") {
+                                alert("Name is required!");
+                                return false; 
+                            }
+                
+                            // Check if email is not empty and valid
+                            if (email === "" || !email.includes('@')) {
+                                alert("Please enter a valid email!");
+                                return false;
+                            }
+                
+                          
+                            if (feedback === "") {
+                                alert("Feedback cannot be empty!");
+                                return false; 
+                            }
+                
+                           
+                            alert("Thank you for your feedback!");
+                            return true; 
+                        }
+                    </script>                      
+</body>
+</html>

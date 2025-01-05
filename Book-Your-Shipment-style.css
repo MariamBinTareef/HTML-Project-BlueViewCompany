@@ -1,0 +1,322 @@
+
+/*-----------------------------------------------------*/
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    background-image: url(Images/background-2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/*--scrollbar------------------------------------------*/
+body {
+    --sb-track-color: #3c4e64;
+    --sb-thumb-color: #c8d2ed;
+    --sb-size: 10px;
+  }
+  
+  body::-webkit-scrollbar {
+    width: var(--sb-size);
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: var(--sb-track-color);
+    border-radius: 10px;
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background: var(--sb-thumb-color);
+    border-radius: 10px;
+  }
+  
+  @supports not selector(::-webkit-scrollbar) {
+    body {
+        scrollbar-color: var(--sb-thumb-color)
+                       var(--sb-track-color);
+    }
+  }
+   
+/*-----------------------------------------------------------*/
+
+
+@font-face{
+    font-family: alemoric; 
+    src: url(Fonts/alemoric/Alemoric\ -\ \(Demo\)\ hanscostudio.com.ttf);
+}
+
+
+@font-face{
+    font-family: feogra; 
+    src: url(Fonts/feogra/Feogra-Demo.otf);
+}   
+
+@font-face{
+    font-family: married; 
+    src: url(Fonts/married/Married.otf);
+}  
+
+@font-face{
+    font-family: simple; 
+    src: url(Fonts/simple/Comic\ Series.otf);
+}
+
+/*----Header-------------------------------------------------*/
+
+
+header{/*border: 1px solid black;*/
+    margin: auto;
+    width: 100%;
+    height: 120px;
+    background-color:#3c4e64 ; 
+    
+    z-index: 999;
+    
+ }
+
+ .logo{
+    margin-left: 10px;
+    width: 20%;
+    float: left;  
+ }
+    .logo img{
+        width: 200px;
+        height: 100px;
+    }
+     
+
+ .exit{
+    width: 50%; 
+    float: right;
+    margin: 20px;
+    padding: 20px 10px ;
+    text-align: right;
+
+ }
+    .exit a{
+        text-decoration: none;
+        text-transform: capitalize;
+        font-family: feogra;
+        color: white;
+        font-size: 15px;
+        
+    }
+    .exit a:hover{
+        color: #916e53;
+    }
+
+/*----main-------------------------------------------------*/
+
+.main{
+    width: 100%;
+    height: fit-content;
+    margin-top: 100px;
+}
+    .main h1{
+        text-transform: capitalize;
+        text-indent: 100px;
+        color: #3c4e64;
+        margin-bottom: 150px;
+    }
+
+
+/*----shipments--------------------------------------------*/
+
+.Type{
+    text-align: center;
+    margin-left: 100px;
+    margin-top: 60px;
+    color: #3c4e64;
+    text-transform: capitalize;
+    background-color: #c8d2ed;
+    border: 1px;
+    width: 60%;
+    height: 50px;
+    border-radius: 50px;
+    padding-left: 20px;
+    padding-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}        
+
+
+.shipment{
+    border: 1px solid #dedede;
+    border-radius: 20px;
+
+    width: 60%;
+    height: 200px;
+    margin-left: 100px;
+    margin-bottom: 100px;
+    
+    background: rgba(248, 248, 248, 0.5);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.2px);
+    -webkit-backdrop-filter: blur(4.2px);
+}
+    
+
+    .shipment-div-1{
+        width: 100%;
+        height: 100px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom: 1px solid #dedede;
+        background-color: #fff;
+        float: left;
+
+        
+    }
+        .Direction{
+            width: 40%;
+            float: left;
+            padding: 40px 20px;
+        }
+
+        .Date{
+            width: 40%;
+            float: right;
+            padding: 40px 20px;
+        }
+
+
+    .shipment-div-2{
+        width: 100%;
+        height: 100px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        background-color: #fff;
+        float: left;
+
+        
+    }
+        .Direction-2{
+            width: 40%;
+            float: left;
+            padding: 20px;
+        }
+
+        .Date-2{
+            width: 40%;
+            float: right;
+            padding: 20px;
+        }
+
+    .select{
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        margin-bottom: 0px;
+        margin-top: 40px;
+        width: 150px;
+        height: 50px;
+        margin-left: 500px;
+        
+    }
+    
+        .select button{
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            width: 100%;
+            height: 50px;
+            text-align: center;
+            color: #6f8195;
+            text-transform: capitalize;
+            font-weight: bold;
+            border: 0px;
+            background-color: #c8d2ed;
+   
+        }
+
+            .select button:hover{
+                background-color: #3c4e64;
+                color: white;
+            }
+
+
+
+/*----Footer-------------------------------------------------*/
+
+footer{
+    width: 100%;
+    height: 300px;
+    background-color: #3c4e64;
+}
+
+.f-logo{
+    margin-left: 10px;
+    width: 20%;
+    float: left;  
+ }
+    .f-logo a{
+        color: white;
+        text-transform: capitalize;
+        text-decoration: none;
+        
+        
+    }
+
+        .f-logo a:hover{
+            color: #916e53;
+        }
+    
+    .f-logo img{
+        width: 200px;
+        height: 100px;
+    }
+    .f-logo h4{
+        text-transform: capitalize; 
+        padding-left: 20px ;
+        color: white;
+        
+    }
+    .f-logo p{
+        text-transform: capitalize; 
+        padding-left: 20px ;
+        color: white;
+        
+    }
+     
+
+.f-menu{
+    width: 20%; 
+    float: right;
+    margin: 20px 100px;
+    padding: 10px 10px ;
+    text-align: right;
+
+ }
+
+ .f-menu h3{ 
+    text-align: left;
+    color: white; 
+    text-transform: capitalize;  
+    padding-left: 20px ;
+    
+    }
+    .f-menu a{
+        display: block; text-align: left;
+        color: white;
+        text-decoration: none;
+        text-transform: capitalize; 
+        font-size: large;
+        padding-left: 20px ;
+        
+    }
+    .f-menu a:hover{
+        color: #916e53;
+    }
+/*------------------------------------------*/
+    .copyRights{
+        width: 100%;
+        height: 20px;
+        margin: 0;
+        background-color: #916e53;
+        padding: 10px;
+
+    }
+        .copyRights p{
+            color: white;
+            text-transform: capitalize;
+            font-size: x-small;
+
+        }

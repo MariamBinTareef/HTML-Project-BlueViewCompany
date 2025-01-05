@@ -1,0 +1,386 @@
+
+/*-----------------------------------------------------*/
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;     
+    scroll-behavior: smooth;
+    background-image: url(Images/background-2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/*--scrollbar------------------------------------------*/
+body {
+    --sb-track-color: #3c4e64;
+    --sb-thumb-color: #c8d2ed;
+    --sb-size: 10px;
+  }
+  
+  body::-webkit-scrollbar {
+    width: var(--sb-size);
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: var(--sb-track-color);
+    border-radius: 10px;
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background: var(--sb-thumb-color);
+    border-radius: 10px;
+  }
+  
+  @supports not selector(::-webkit-scrollbar) {
+    body {
+        scrollbar-color: var(--sb-thumb-color)
+                       var(--sb-track-color);
+    }
+  }
+   
+/*-----------------------------------------------------*/
+
+
+@font-face{
+    font-family: alemoric; 
+    src: url(Fonts/alemoric/Alemoric\ -\ \(Demo\)\ hanscostudio.com.ttf);
+}
+
+
+@font-face{
+    font-family: feogra; 
+    src: url(Fonts/feogra/Feogra-Demo.otf);
+}   
+
+@font-face{
+    font-family: married; 
+    src: url(Fonts/married/Married.otf);
+}  
+
+@font-face{
+    font-family: simple; 
+    src: url(Fonts/simple/Comic\ Series.otf);
+}
+
+/*-----------------------------------------------------*/  
+
+
+
+header{/*border: 1px solid black;*/
+    margin: auto;
+    width: 100%;
+    height: 100px;
+    background-color:#3c4e64 ; 
+    position: fixed;
+    z-index: 999; 
+     
+ }
+
+ .logo{
+    margin-left: 10px;
+    width: 20%;
+    float: left;  
+ }
+    .logo img{
+        width: 200px;
+        height: 100px;
+    }
+     
+ .menu{
+    width: 50%; 
+    float: right;
+    margin: 20px;
+    padding: 20px 10px ;
+    text-align: right;
+
+ }
+    .menu a{
+        color: white;
+        text-decoration: none;
+        text-transform: capitalize; 
+        font-size: large;
+        padding-left: 20px ;
+        
+    }
+    .menu a:hover{
+        color: #916e53;
+    }
+
+    
+    
+.banner{ 
+    width: 100%;
+    height: 750px;
+    
+    background-image: url(AboutUs-images/banner.png);
+    background-repeat: no-repeat;
+    background-position: center ;
+    background-size: cover;
+    
+}
+ 
+
+    .banner-top{
+
+        backdrop-filter: blur(1px) saturate(100%);
+        -webkit-backdrop-filter: blur(1px) saturate(100%);
+        background-color: rgba(60, 78, 100, 0.74); 
+        border: 1px solid rgba(255, 255, 255, 0.125); 
+
+        width: 100%;
+        height: 250px;
+        text-align: center;
+        padding-top: 50px; 
+        
+    }
+        .banner-top-content{
+            margin: auto;
+            padding-top: 50px; 
+            width: fit-content;
+            height: fit-content; 
+            position: center;
+
+        }
+            .banner-top-content h1{ 
+             color: white;
+             text-shadow: 2px 4px 2px #4f3e31;
+             font-weight: 300;
+             font-size: 40px;
+
+            }
+            .banner-top-content a{ 
+                color:  #916e53; 
+                text-shadow: 2px 4px 2px #4f3e31;
+                text-decoration: none;
+                text-transform: capitalize; 
+                font-family: alemoric; 
+                font-weight: 800;
+                font-size: 70px;
+                padding-bottom: 50px;
+   
+               }
+
+             
+ .banner-middle{
+    height: 347px;
+ }
+
+    .banner-bottom{
+        backdrop-filter: blur(1px) saturate(100%);
+        -webkit-backdrop-filter: blur(1px) saturate(100%);
+        background-color: rgba(60, 78, 100, 0.74); 
+        border: 1px solid rgba(255, 255, 255, 0.125);
+
+        width: 100%;
+        height: 100px; 
+    } 
+
+/*-----------------------------------------------------*/
+
+#treeDiv{
+    display: flex;
+    flex-direction: column
+}
+
+.midlle{
+    margin: 5px;
+    height:50px;
+    width:auto;
+    padding-left: 100px;
+}
+
+.d{border: 2px solid #e4dacb;
+    width: 500px;
+    margin: 20px;
+    padding: 10px; 
+    height:325px; 
+    margin: 10px;
+    margin-top: 15px;
+}
+
+.h3{color: white}
+
+.p{color: white;}
+
+.pp{color: white; 
+    font-size: smaller;
+}
+
+.h1{color: #3c4e64 ;}
+
+.footer{background-color: #3c4e64; 
+    height: 350px; 
+    width: auto;
+}
+
+.div{width: 30%; 
+    float: left;
+}
+
+.image{margin: 10px;}
+
+.h5{color: white; 
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 10px; 
+    padding-left: 20px;
+}
+
+.h6{padding-left: 20px;}
+
+.a{color: white; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    text-decoration: none;
+}
+
+.img{
+    padding-left: 30px;
+}
+
+.c{
+    border: 1px solid #919bb5 ;
+    font-family: simple;
+    font-size: xx-large;
+    border-radius: 5px;
+    color: #27374a;
+    height:90px;
+    width:80px; 
+    text-align: center; 
+    padding: 20px; 
+    display: inline-block;
+}
+
+.R{
+    margin-top: 80px;
+    margin-bottom: 80px;
+    padding-left: 50px;
+    display: inline-block;
+}
+
+.S{background-image: url(AboutUs-images/banner-2.png); 
+    background-size: cover; 
+    height:600px ;
+    width:700px; 
+    padding-left: 400px; 
+    margin-left: 100px;
+    margin-left: 200px;
+    margin-inline-end: auto;
+    display: flex; 
+    justify-content: center;
+}
+
+.p2{display: inline-block; 
+    color: white; 
+    text-transform: capitalize;
+    padding-block: 200PX; 
+    padding-right:600PX; 
+    padding-top: 70px; 
+    padding-bottom: 70px; 
+    text-align:center;
+    background-color: rgba(60, 78, 100, 0.74);
+    font-size:small; 
+}
+
+.li{
+    margin-top: 150px;
+    padding-left: 50px; 
+    color: #3c4e64;
+}
+
+.B{
+    display: flex; 
+    justify-content: center;
+}
+
+.L{
+    color: #27374a; 
+    font-weight: bold;
+}
+    
+    
+/*----Footer-------------------------------------------------*/
+
+footer{
+    width: 100%;
+    height: 300px;
+    background-color: #3c4e64;
+    margin-top: 150px;
+}
+
+.f-logo{
+    margin-left: 10px;
+    width: 20%;
+    float: left;  
+ }
+    .f-logo a{
+        color: white;
+        text-transform: capitalize;
+        text-decoration: none;
+        
+        
+    }
+
+        .f-logo a:hover{
+            color: #916e53;
+        }
+    
+    .f-logo img{
+        width: 200px;
+        height: 100px;
+    }
+    .f-logo h4{
+        text-transform: capitalize; 
+        padding-left: 20px ;
+        color: white;
+        
+    }
+    .f-logo p{
+        text-transform: capitalize; 
+        padding-left: 20px ;
+        color: white;
+        
+    }
+     
+
+.f-menu{
+    width: 20%; 
+    float: right;
+    margin: 20px 100px;
+    padding: 10px 10px ;
+    text-align: right;
+
+ }
+
+ .f-menu h3{ 
+    text-align: left;
+    color: white; 
+    text-transform: capitalize;  
+    padding-left: 20px ;
+    
+    }
+    .f-menu a{
+        display: block; text-align: left;
+        color: white;
+        text-decoration: none;
+        text-transform: capitalize; 
+        font-size: large;
+        padding-left: 20px ;
+        
+    }
+    .f-menu a:hover{
+        color: #916e53;
+    }
+/*------------------------------------------*/
+    .copyRights{
+        width: 100%;
+        height: 20px;
+        margin: 0;
+        background-color: #916e53;
+        padding: 10px;
+
+    }
+        .copyRights p{
+            color: white;
+            text-transform: capitalize;
+            font-size: x-small;
+
+        }
+        
